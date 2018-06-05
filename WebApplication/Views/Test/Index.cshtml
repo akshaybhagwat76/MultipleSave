@@ -1,0 +1,103 @@
+﻿
+@{
+    ViewBag.Title = "Customer";
+}
+
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<center>
+    <div class="container" style="width:40%;margin-top:2%">
+        <div class="grid">
+            <h2>Customer Payment Details</h2>
+            <table class="table table-responsive" id="mytbl">
+                <tr>
+                    <td>Customer Email</td>
+                    <td>Amount</td>
+                    <td>Address</td>
+                </tr>
+            </table>
+        </div>
+
+
+        <table>
+            <tr>
+                <td colspan="2"><center><h2> Customer Info</h2></center></td>
+            </tr>
+            <tr>
+                <td>Customer email</td>
+                <td>
+                    <input type="text" class="form-control input-sm" id="email">
+                    <br />
+                </td>
+            </tr>
+
+            <tr>
+                <td>Customer mobile</td>
+                <td>
+                    <input type="number" class="form-control input-sm" id="mobile">
+                    <br />
+                </td>
+            </tr>
+            @*<tr>
+                    <td></td>
+                    <td>
+                        <div style="padding:10px 0; text-align:right">
+                            <input id="submit" type="button" value="Save Order" class="btn btn-warning" style="padding:10px 20px" />
+                        </div>
+                    </td>
+                </tr>*@
+        </table>
+        <br />
+        <br />
+        <div class="address-details">
+
+            <h2>Address Details</h2>
+            <div id='TextBoxesGroup'>
+
+                <div id="TextBoxDiv1">
+                    <label>Enter Address  : </label> &nbsp; &nbsp; <input type="button" id="btnAddress" value="+Add" class="btn btn-success" />
+                    <br />
+                    <br />
+                    <input type='text' id='textbox1'>
+                </div>
+            </div>
+
+        </div>
+
+        @*<div class="address-details">
+                <h2>Address Details</h2>
+                <input type="button" id="btnAddress" value="+Add" class="btn btn-success" />
+                <table class="table table-responsive" id="tblAddress">
+                    <tr>
+                        <td><h7>Address</h7></td>
+                    </tr>
+                    <tr class="mycontainer" id="mainrow">
+                        <td>
+                            <input type="text" id="txtadd" />
+                        </td>
+                    </tr>
+                </table>
+            </div>*@
+        <br />
+        <br />
+        <div class="payment-details">
+            <h2>Payment Details</h2>
+            <input type="button" id="btnpayment" value="+Add" class="btn btn-success" />
+            <table class="table table-responsive" id="tblPayment">
+                <tr>
+                    <td><h7>payment</h7></td>
+                </tr>
+                <tr class="mycontainer1" id="mainrow1">
+                    <td>
+                        <input type="number" id="txtamt" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div style="padding:10px 0; text-align:right">
+            <input id="submit" type="button" value="Save Order" class="btn btn-warning btnSaveOrder" style="padding:10px 20px" />
+        </div>
+        
+    </div>
+</center>
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/assets/main.js"></script>

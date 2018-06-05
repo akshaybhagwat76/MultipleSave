@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="demoModelStoreContainer" CdmEntityContainer="demoEntities">
+    <EntitySetMapping Name="Addresses">
+      <EntityTypeMapping TypeName="demoModel.Address">
+        <MappingFragment StoreEntitySet="Address">
+          <ScalarProperty Name="add_id" ColumnName="add_id" />
+          <ScalarProperty Name="c_address" ColumnName="c_address" />
+          <ScalarProperty Name="c_id" ColumnName="c_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="demoModel.Customer">
+        <MappingFragment StoreEntitySet="Customers">
+          <ScalarProperty Name="c_id" ColumnName="c_id" />
+          <ScalarProperty Name="cemail" ColumnName="cemail" />
+          <ScalarProperty Name="cmobile" ColumnName="cmobile" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="payments">
+      <EntityTypeMapping TypeName="demoModel.payment">
+        <MappingFragment StoreEntitySet="payment">
+          <ScalarProperty Name="p_id" ColumnName="p_id" />
+          <ScalarProperty Name="p_amount" ColumnName="p_amount" />
+          <ScalarProperty Name="c_id" ColumnName="c_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
